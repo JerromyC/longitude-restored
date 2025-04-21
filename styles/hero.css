@@ -1,0 +1,82 @@
+/* hero ---------------------------------------------------------------- */
+
+#hero {
+    padding: 3vw;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    position: relative;
+    height: auto;
+    min-height: calc(100vh - 300px);
+    background-image: url(../assets/remodeling.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 50px 0px 50px 0px;
+    width: 100%;
+}
+
+#hero h1 {
+max-width: 500px;
+}
+
+#hero a {
+    display: block;
+    background-color: var(--secondary);
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    padding: 8px;
+    width: 100%;
+    margin-top: 32px;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+#hero p {
+    position: absolute;
+    top: 32px;
+    right: 10%;
+    text-align: center;
+    color: var(--primary);
+    opacity: 100%;
+    font-size: 10pt;
+}
+
+#hero p a {
+    color: var(--primary);
+}
+
+.hours {
+    color: var(--primary);
+}
+
+@media screen and (min-width: 700px) {
+    #hero {
+        padding: 6vw;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        align-items: flex-start;
+        height: calc(100vh - 100px);
+    }
+
+    .hero-wrapper {
+        width: auto;
+        max-width: 60%;
+        background-color: #fff;
+    }
+
+    #hero h1 {
+        width: 100%;
+        max-width: none;
+    }
+}

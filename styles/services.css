@@ -1,0 +1,154 @@
+/* services------------------------------------------------------------- */
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 16px;
+}
+
+#services h2 {
+    margin-bottom: 16px;
+}
+
+.service-grid_wrapper_text {
+    padding-bottom: 32px;
+}
+
+.service-grid_wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    height: 100%;
+}
+
+.service-grid_wrapper img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0px;
+    margin-bottom: -5px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service-grid_wrapper-inner {
+    background-color: var(--tertiary);
+    color: #fff;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 0px 0px 20px 20px;
+    flex: 1;
+    height: auto;
+}
+
+.service-plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 64px 0px;
+    padding-bottom: 0px;
+}
+
+.service-plans > .centered{
+    text-align: center;
+    max-width: 750px;
+}
+
+.service-plans_item-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 32px auto;
+}
+
+.service-plans_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    padding-bottom: 16px;
+    margin: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.34); 
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.34);
+}
+
+.non-offer {
+    opacity: 25%;
+    text-decoration: line-through;
+}
+
+.service-plans_item h3 {
+    text-align: center;
+    color: var(--secondary);
+}
+
+.service-plans_item span {
+    text-align: center;
+}
+
+.service-plans_item ul {
+margin-top: 16px;
+}
+
+.service-plans_item ul li {
+    margin-bottom: 16px;
+}
+
+.service-plans_item ul li h3 {
+    margin: 0px;
+}
+
+.service-plans_item ul li p {
+    margin: 0px;
+}
+
+@media screen and (min-width: 700px) {
+    #services {
+        padding: 64px;
+    }
+
+    .service-grid_wrapper_text {
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #services {
+        padding: 64px;
+    }
+
+    .service-grid_wrapper {
+        margin-top: auto;
+    }
+
+    .service-grid_wrapper_text {
+        align-items: center;
+        margin: auto;
+    }
+
+    .service-grid_wrapper_text h2,
+    .service-grid_wrapper_text p {
+        width: 80%;
+    }
+
+    .service-grid_wrapper img {
+        height: 200px;
+    }
+
+    .service-grid_wrapper_first img {
+        height: 200px;
+    }
+
+    .service-plans {
+        padding: 128px 0px;
+    }
+
+}
