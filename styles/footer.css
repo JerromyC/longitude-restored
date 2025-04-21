@@ -114,6 +114,15 @@ footer div p {
     opacity: 75%;
 }
 
+.plug:hover {
+    cursor: default;
+    opacity: 100%;
+}
+
 .plug a {
-    color: var(--tertiary);
+    color: var(--secondary);
+}
+
+.plug a:hover {
+    cursor: pointer;
 }
