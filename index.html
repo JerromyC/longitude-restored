@@ -13,11 +13,235 @@
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body class="body-not-active">
-    <h1>Site Not active</h1>
-    <p>Please reach out to have the website activated again</p>
-    <a href="tel:2512952962">251-295-2962</a>
-    
+
+
+<!-- replace body in index.html with code below -->
+
+
+
+<body class="no-body">
+    <nav id="nav">
+        <svg id="hamburger" viewBox="0 0 250 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="top" width="250" height="30" rx="15" y="0" fill="#0A172A" />
+            <rect class="middle" width="250" height="30" rx="15" y="84" fill="#0A172A" />
+            <rect class="bottom" width="250" height="30" rx="15" y="165" fill="#0A172A" />
+        </svg>
+        <ul id="navbar">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="#contact" class="button">Free Estimate</a>
+        </ul>
+    </nav>
+    <section id="hero">
+        <div class="hero-wrapper">
+            <h1>At Longitude Restored, we’ve got the tools, experience, and grit to get the job done right.</h1>
+            <a href="tel:">Call Now</a>
+        </div>
+            </p>
+    </section>
+    <section id="services">
+        <div class="grid">
+            <div class="grid-cell large-cell service-grid_wrapper_text">
+                <h2>Let Us Handle The Tough Stuff For You!</h2>
+                <p>
+                    At Longitude Restored, our mission is to bring peace of mind and lasting restoration to every property we touch—providing dependable, high-quality service in water remediation, clean outs, storm recovery, and preventative care that exceeds expectations at every turn</p>
+            </div>
+            <div class="grid-cell large-cell">
+                <div class="service-grid_wrapper service-grid_wrapper_first">
+                    <img src="./assets/remediation.jpg" alt="">
+                    <div class="service-grid_wrapper-inner">
+                        <h3>Water Damage Remediation</h3>
+                        <p>When water strikes unexpectedly, our expert team responds quickly to remove moisture, prevent mold, and restore your property. We handle everything from minor leaks to major flooding with professional-grade equipment and proven techniques.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="service-grid_wrapper">
+                    <img src="./assets/carport.jpg" alt="">
+                    <div class="service-grid_wrapper-inner">
+                        <h3>Custom-Built Carports</h3>
+                        <p>Protect your vehicles from the elements with durable, high-quality carports. We design and install structures that blend with your home or business while providing dependable year-round shelter.p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="service-grid_wrapper">
+                    <img src="./assets/demolition.jpg" alt="">
+                    <div class="service-grid_wrapper-inner">
+                        <h3>Demolition Services</h3>
+                        <p>Need to tear it down before building back up? We provide full and selective demolition services for residential and commercial spaces — always with safety, speed, and site cleanup in mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="service-grid_wrapper">
+                    <img src="./assets/cleanout.jpg" alt="">
+                    <div class="service-grid_wrapper-inner">
+                        <h3>Property Clean-Outs</h3>
+                        <p>From cluttered estates to post-construction cleanup, we handle full-service property clean-outs with speed and care. Let us do the heavy lifting so you can reclaim your space stress-free.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="service-grid_wrapper">
+                    <img src="./assets/sheetrock.jpg" alt="">
+                    <div class="service-grid_wrapper-inner">
+                        <h3>Sheetrock Repair</h3>
+                        <p>We deliver flawless drywall finishes with professional taping and floating. Whether it’s new construction or a repair job, we leave your walls smooth, even, and ready for paint or texture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services_image-buffer">
+        <img class="image-right" src="./assets/landscape-right.svg" alt="">
+        <img class="image-left" src="./assets/landscape-left.svg" alt="">
+    </section>
+    <section id="why">
+        <h2>Why choose us over the other guys?</h2>
+        <div class="why-wrapper">
+            <div class="why-item">
+                <!-- <img src="./assets/piggy.gif" alt=""> -->
+                <h3>Reliable Services</h3>
+                <p>We show up when we say we will — and we don’t leave until the job’s done right.</p>
+            </div>
+            <div class="why-item">
+                <!-- <img src="./assets/wrench.gif" alt=""> -->
+                <h3>Locally Owned</h3>
+                <p>We’re not a big franchise - we take pride in helping our neighbors.</p>
+            </div>
+            <div class="why-item">
+                <!-- <img src="./assets/check.gif" alt=""> -->
+                <h3>Built on Trust</h3>
+                <p>No games. No hidden fees. Just honest work and straightforward pricing.</p>
+            </div>
+            <div class="why-item">
+                <!-- <img src="./assets/check.gif" alt=""> -->
+                <h3>Clean Job Sites</h3>
+                <p>We treat your property with respect and always leave it cleaner than we found it.</p>
+            </div>
+        </div>
+        <img class="badge" src="./assets/badge.svg" alt="">
+    </section>
+    <section id="contact">
+        <span class="topper">Let’s Get It Done!</span>
+        <h2>Schedule a Free Estimate</h2>
+        <div class="contact-wrapper">
+            <div>
+                <form form name="contact" method="POST" netlify action="/thank-you">
+                    <input type="hidden" name="form-name" value="contact"> <!--hidden input-->
+                    <label for="basic" class="form-section-label">Basic Info</label>
+                    <div id="basic" class="form-container">
+                        <!-- Name, Email, and Phone -->
+                        <div class="form-container_inner">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-container_inner">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-container_inner">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+                                placeholder="1234567890">
+                        </div>
+                    </div>
+
+                    <!-- Address Block -->
+                    <label for="address" class="form-section-label">Address</label>
+                    <div id="address" class="form-container">
+                        <div class="form-container_inner">
+                            <label for="street">Street:</label>
+                            <input type="text" id="street" name="street" required>
+                        </div>
+                        <div class="form-container_inner">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-container_inner">
+                            <label for="state">State:</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                        <div class="form-container_inner">
+                            <label for="zipcode">ZIP Code:</label>
+                            <input type="text" id="zipcode" name="zipcode" required pattern="[0-9]{5}"
+                                placeholder="12345">
+                        </div>
+                    </div>
+
+                    <!-- Checklist -->
+                    <label for="form-services" class="form-section-label">How can we help?</label>
+                    <div id="form-services">
+                        <div class="checkbox-wrapper">
+                            <label><input type="checkbox" name="services[]" value="remediation"> Water Remediation</label>
+                            <label><input type="checkbox" name="services[]" value="carports"> Carports</label>
+                            <label><input type="checkbox" name="services[]" value="demolition">Demolition</label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <label><input type="checkbox" name="services[]" value="cleanout"> Clean Out</label>
+                            <label><input type="checkbox" name="services[]" value="flowerbed"> Sheetrock Repair</label>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label for="additional-comments">Additional Comments and Requests</label>
+                        <textarea id="additional-comments" name="additional-comments" rows="10"
+                            placeholder="Let us know any specific details or requests..."></textarea>
+                    </div>
+
+
+                    <!-- Subscription Dropdown -->
+                    <!-- <label for="subscription">Choose a Subscription Plan:</label>
+                    <div class="subscription-container">
+                        <select id="subscription" name="subscription" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="pay-as-you-go">Pay as you go</option>
+                            <option value="6-month">6-month</option>
+                            <option value="9-month">9-month</option>
+                            <option value="12-month">12-month</option>
+                        </select>
+                    </div> -->
+
+                    <button class="form-submit" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <a href="#nav" class="toTop"><img src="./assets/uparrow.svg" alt=""></a>
+    <footer>
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <!-- Change to client phone -->
+                <li><a href="tel:">1-409-429-4969</a></li>
+                <li class="centered">
+                <!-- Change to client email -->
+                <a href="mailto:">longituderest@gmail.com</a></li>
+            </ul>
+            <div class="social-wrapper">
+                <!-- <a href="https://www.facebook.com/SETXLawncareSolutions" target="_blank"><img src="./assets/fb.gif" alt=""></a> -->
+                <!-- <a href="https://www.google.com/search?q=Southeast+Texas+Lawn+Care+Solutions&ludocid=5295056573964723355&sa=X&ved=2ahUKEwj27oOF5viKAxXGRjABHSQPIiwQ_coHegQIIBAB&sxsrf=ADLYWIJAZrI9JkX7inevO7IuvDPkcDTqbA:1736980884951#lpg=cid:CgIgAQ%3D%3D" target="_blank"><img src="./assets/google.gif" alt=""></a> -->
+            </div>
+            <!-- Client number goes here -->
+            <a href="tel:"><button>Call Now</button></a>
+        </div>
+        <div>
+            <p>We look forward to working with you!</p>
+            <img class="footer-logo" src="./assets/outwest.png" alt="">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>© 2025 Longitude Restored <em>all rights reserved</em></p>
+        <p class="plug">site designed, developed, and mainatained by <a
+                href="https://chancewebstudio.netlify.app/" target="_blank">Chance Web Studio</a></p>
+        <!-- <a href="https://lordicon.com/" target="_blank">Animated icons by Lordicon.com</a> -->
+    </div>
+    <script src="./script.js"></script>
+    <div class="main-bg_wrapper">
+        <img class="main-bg" src="./assets/large-sheetrocked-wall.svg" alt="">
+    </div>
 </body>
 
 </html>
