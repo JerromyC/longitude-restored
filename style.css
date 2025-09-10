@@ -30,6 +30,10 @@
     padding: 0px;
 }
 
+* {
+    outline: 2px solid red;
+}
+
 :root {
     --primary: #163661;
     --secondary: #DE7A07;
@@ -44,7 +48,7 @@ html {
 
 body {
     position: relative;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -78,7 +82,7 @@ body .no-body {
 
 .main-bg {
     height: auto;
-    object-fit:fill;
+    object-fit:cover;
 }
 
 
@@ -162,5 +166,6 @@ ul {
 @media screen and (min-width: 1024px) { 
     .main-bg {
         width: 100%;
+        max-width: 99vw;
     }
 }
