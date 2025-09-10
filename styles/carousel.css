@@ -8,7 +8,9 @@
 .carousel h2 {
     text-align: center;
     color: #fff;
+    margin: auto;
     margin-bottom: 32px;
+    max-width: 60%;
 }
 
 .carousel-wrapper {
