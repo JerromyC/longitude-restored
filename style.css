@@ -30,10 +30,6 @@
     padding: 0px;
 }
 
-* {
-    outline: 2px solid red;
-}
-
 :root {
     --primary: #163661;
     --secondary: #DE7A07;
