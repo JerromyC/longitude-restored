@@ -20,17 +20,15 @@
 
 .carousel-track {
     display: flex;
-    overflow-x: auto; 
     transition: transform 0.3s ease-in-out;
-    width: 100%;
-    max-width: 100%;
 }
 
 .carousel-image {
-    min-width: 100%;
-    object-fit: cover;
-    height: auto;
-    display: block;
+  flex: 0 0 100%;         /* each image fills viewport width on mobile */
+  object-fit: cover;
+  width: 100%;
+  max-height: 400px;
+  display: block;
 }
 
 .carousel-overlay {
@@ -41,7 +39,6 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-
 }
 
 .arrow {
@@ -54,7 +51,7 @@
     cursor: pointer;
     border-radius: 4px;
     transition: background 0.2s;
-    touch-action: manipulation; /* Prevents double-tap zoom on mobile */
+    touch-action: manipulation;
 }
 
 .arrow:hover {
@@ -62,48 +59,28 @@
     color: var(--primary);
 }
 
-
+/* Desktop refinements */
 @media screen and (min-width: 768px) { 
     .carousel-wrapper {
-        position: relative;
-        justify-content: center; /* Centers the track */
         max-width: 100vw;
-    }
-
-    .carousel-track {
-        width: fit-content;
-        max-width: 500px;
-        margin: 0 auto;
-        display: flex;
-        transition: transform 0.3s ease-in-out;
-        z-index: 1;
-    }
-
-    .carousel-image {
-        width: 100%;
-        max-height: 300px;
-        max-width: 500px; /* Set this to how wide you want each image */
-        margin: 0 32px;
-        flex-shrink: 0;
-        z-index: 1;
-    }
-
-    .carousel-track {
-        max-width: 33%;
         margin: 0 auto;
     }
 
-    .carousel-image {
-        margin: 0; /* reduced from 32px */
-        width: auto;
-        max-width: 500px;
-        flex-shrink: 0;
+    .carousel-track {
+        justify-content: center;
+        gap: 16px; /* space between images instead of margins */
     }
-    
+
+      .carousel-image {
+    flex: 0 0 auto;       /* images side by side on desktop */
+    max-width: 500px;
+    margin: 0 8px;
+  }
+
     .carousel-arrows {
         position: relative;
         z-index: 3;
         width: 50%;
-    margin: 32px auto;
+        margin: 32px auto;
     }
 }
