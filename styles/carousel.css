@@ -1,5 +1,4 @@
 .carousel {
-    display: none;
     width: 100%;
     overflow: hidden;
     background-color: var(--primary);

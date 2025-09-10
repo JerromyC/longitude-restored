@@ -44,7 +44,7 @@ html {
 
 body {
     position: relative;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -161,6 +161,6 @@ ul {
 
 @media screen and (min-width: 1024px) { 
     .main-bg {
-        min-width: 100%;
+        width: 100%;
     }
 }
